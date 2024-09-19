@@ -13,7 +13,6 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <h2>Welcome, {username}</h2>
       <button onClick={handleLogout}>Logout</button>
     </div>
   );
