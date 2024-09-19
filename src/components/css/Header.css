@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+header{
+    height: 80px;
+    background-color: #172234;
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+}
+
+.header-btns{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    width: 160px;
+    height: 44px;
+    margin-left: 10px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    border-radius: 5px;
+    background-color: #B29F7E;
+    color: #FFFFFF;
+    border: 1px solid #B29F7E
+}
+
+@media screen and (max-width: 1024px) {
+    .btn{
+        width: 100px;
+        font-size: 12px;
+        height: 36px;
+    }
+}
+
+.btn.bordered{
+    color: #B29F7E;
+    background-color: transparent;
+}
+
