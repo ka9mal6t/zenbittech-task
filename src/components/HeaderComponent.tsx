@@ -1,4 +1,5 @@
 import {FC} from 'react';
+import { useNavigate } from 'react-router-dom';
 import './css/Header.css'
 
 
@@ -8,7 +9,8 @@ interface IHeaderComponent{
 }
 const HeaderComponent: FC<IHeaderComponent> = ({auth, logOut}) => {
 
-   
+  const navigate = useNavigate();
+  
   return (
     <header>
         <div className='header-btns'>
@@ -17,7 +19,7 @@ const HeaderComponent: FC<IHeaderComponent> = ({auth, logOut}) => {
             :
             (auth === false? 
                 <div>
-                    <button className='btn bordered'>Log In</button>
+                    <button className='btn bordered' onClick={()=>{navigate('/login')}}>Log In</button>
                     <button className='btn'>Sing Up</button>
                 </div>
              :
