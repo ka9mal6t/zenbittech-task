@@ -19,7 +19,7 @@ const DealComponent: FC<IDealComponent> = ({imageUrl, name, price, tiket, yieldD
     <div className='item'>
       <img src={imageUrl} alt="" />
         <div className='item__overlay'>
-          <p>{name}</p>
+          <span className='item__title'>{name}</span>
           <div className='item__text' >
           
             <div className='param__1'>

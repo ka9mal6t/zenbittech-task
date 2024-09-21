@@ -30,7 +30,7 @@
     display: flex;
 }
 
-.item p{
+.item__title{
     color: #FFFFFF;
     font-family: "Merriweather", serif;
     font-weight: 700;
@@ -62,7 +62,7 @@
 }
 
 @media screen and (max-width: 700px) {
-    .item p{
+    .item__title {
         font-size: 18px;
         line-height: 26px;
     }
@@ -73,8 +73,8 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .item p{
+@media screen and (max-width: 400px) {
+    .item__title {
         font-size: 14px;
         line-height: 20px;
     }
