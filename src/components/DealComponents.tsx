@@ -3,7 +3,7 @@ import './css/Deal.css'
 
 
 
-interface IDealComponent{
+export interface IDealComponent{
   imageUrl: string,
   name: string,
   price: number,
